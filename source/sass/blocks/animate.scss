@@ -1,0 +1,51 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(-50deg);
+  }
+
+  to {
+    transform: rotate(50deg);
+  }
+}
+
+@keyframes offsetAndRotate {
+  0% {
+    transform: translateX(-15vw) rotate(-180deg);
+  }
+
+  to {
+    transform: translateX(15vw) rotate(180deg);
+  }
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(-10vw);
+  }
+
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes fadeMint {
+  0%,
+  95% {
+    opacity: 0;
+  }
+
+  3%,
+  80% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

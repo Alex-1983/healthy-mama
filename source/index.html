@@ -10,13 +10,32 @@
     <meta name="format-detection" content="date=no">
     <meta name="format-detection" content="address=no">
     <meta name="format-detection" content="email=no">
-    <title>healthy-mama</title>
+    <title>Доставка здорового питания для мам</title>
+    <link rel="preload" href="fonts/Lato-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Lato-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Lato-Semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <script>
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
     </script>
   </head>
-  <header></header>
+  <!-- main-header -->
+  <include src="source/templates/main-header.html"></include>
+  <!-- main -->
+  <main>
+    <include src="source/templates/advertisement.html"></include>
+  </main>
+
   <body></body>
   <footer></footer>
+  <script src="libs/object-fit/ofi.min.js"></script>
+  <script>
+  objectFitImages();
+
+  </script>
+  <script src="libs/picturefill/picturefill.min.js"></script>
+  <script src="js/app.min.js"></script>
 
 </html>

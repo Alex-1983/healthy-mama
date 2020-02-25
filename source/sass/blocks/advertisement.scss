@@ -1,0 +1,347 @@
+.advertisement {
+  @media (max-width: $screen-md) {
+    min-height: 1195px;
+
+    border: 1px solid red;
+  }
+
+  @media (max-width: $screen-sm) {
+    min-height: 937px;
+
+    border: 1px solid red;
+  }
+}
+
+.advertisement__leaves {
+  position: absolute;
+  z-index: 0;
+
+  overflow: hidden;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.advertisement__mint {
+  position: absolute;
+  top: 0;
+
+  animation-name: fadeMint, drop;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+
+  &::before {
+    content: "";
+    position: static;
+
+    display: block;
+
+    transform-origin: 50% -50%;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    background-image: url("../img/mint.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/mint@2x.png");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/mint.webp");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/mint@2x.webp");
+    }
+  }
+
+  &--most {
+    top: -4.5vw;
+    right: -0.5vw;
+
+    animation-duration: 5s, 5s;
+    animation-delay: 0.3s, 0.3s;
+
+    &::before {
+      width: 13vw;
+      height: 16vw;
+
+      animation-name: rotate;
+      animation-duration: 5s;
+
+      background-size: 13vw auto;
+    }
+  }
+
+  &--big {
+    left: 36vw;
+
+    animation-duration: 10s, 10s;
+    animation-delay: 0.3s, 0.3s;
+
+    &::before {
+      width: 8vw;
+      height: 8vw;
+
+      animation-name: offsetAndRotate;
+      animation-duration: 10s;
+
+      background-size: 8vw auto;
+    }
+  }
+
+  &--middle {
+    left: 15vw;
+
+    animation-duration: 7s, 7s;
+    animation-delay: 0.3s, 0.3s;
+
+    &::before {
+      width: 4vw;
+      height: 4vw;
+
+      animation-name: offsetAndRotate;
+      animation-duration: 7s;
+
+      background-size: 4vw auto;
+
+      @media (max-width: $screen-md) {
+        width: 17vw;
+        height: 17vw;
+
+        background-size: 17vw auto;
+      }
+    }
+  }
+
+  &--small {
+    right: 7vw;
+
+    animation-duration: 9s, 9s;
+    animation-delay: 0.3s, 0.3s;
+
+    &::before {
+      width: 3.5vw;
+      height: 3.5vw;
+
+      animation-name: offsetAndRotate;
+      animation-duration: 9s;
+
+      background-size: 3.5vw auto;
+
+      @media (max-width: $screen-md) {
+        width: 15vw;
+        height: 15vw;
+
+        background-size: 15vw auto;
+      }
+    }
+  }
+
+  &--least {
+    right: 3vw;
+
+    animation-duration: 12s, 12s;
+    animation-delay: 0.7s, 0.7s;
+
+    &::before {
+      width: 3vw;
+      height: 3vw;
+
+      animation-name: rotate;
+      animation-duration: 12s;
+
+      background-size: 3vw auto;
+
+      @media (max-width: $screen-md) {
+        width: 10vw;
+        height: 10vw;
+
+        background-size: 10vw auto;
+      }
+    }
+  }
+
+  &--scanty {
+    left: 35vw;
+
+    animation-duration: 10s, 10s;
+    animation-delay: 0.3s, 0.3s;
+
+    &::before {
+      width: 1.5vw;
+      height: 1.5vw;
+
+      animation-name: offsetAndRotate;
+      animation-duration: 10s;
+
+      background-size: 1.5vw auto;
+
+      @media (max-width: $screen-md) {
+        width: 9vw;
+        height: 9vw;
+
+        background-size: 9vw auto;
+      }
+    }
+  }
+}
+
+.advertisement__inner {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-right: 15.5vw;
+  margin-left: 20.3vw;
+  padding-top: 8.7vw;
+
+  @media (max-width: $screen-md) {
+    flex-direction: column;
+    align-items: center;
+
+    margin-right: 4.7vw;
+    margin-left: 4.7vw;
+  }
+}
+
+.advertisement__text-wrap {
+  padding-top: 9.7vw;
+  width: 24.8vw;
+
+  @media (max-width: $screen-md) {
+    padding-top: 16.7vw;
+    width: 43.6vw;
+
+    text-align: center;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-top: 28.3vw;
+    width: 90vw;
+  }
+}
+
+.advertisement__text-wrap h1 {
+  margin: 0;
+  margin-bottom: 1.6vw;
+  padding: 0;
+
+  font-size: 2.6vw;
+  line-height: 2.7vw;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 4.1vw;
+
+    font-size: 4.2vw;
+    line-height: 4.4vw;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 7.1vw;
+
+    font-size: 7.8vw;
+    line-height: 8vw;
+  }
+}
+
+.advertisement__text-wrap p {
+  margin: 0;
+  margin-bottom: 2.5vw;
+  padding: 0;
+  width: 19.5vw;
+
+  font-size: 1.2vw;
+  font-weight: 500;
+  line-height: 1.7vw;
+
+  @media (max-width: $screen-md) {
+    margin-right: auto;
+    margin-bottom: 7.5vw;
+    margin-left: auto;
+    width: 35vw;
+
+    font-size: 2.33vw;
+    line-height: 3vw;
+
+    text-align: center;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 11.5vw;
+    width: 77vw;
+
+    font-size: 5vw;
+    line-height: 7vw;
+  }
+}
+
+.advertisement__link {
+  position: relative;
+
+  padding: 1vw 2.9vw 1vw 0.9vw;
+  width: 12.7vw;
+  max-width: 100%;
+
+  font-size: 0.74vw;
+  line-height: 1vw;
+
+  color: $white;
+  border: 5px solid $white;
+  border-radius: 65px;
+  background-color: #35b86c;
+  box-shadow: 0 0 0 1px rgba(25, 130, 189, 0.1);
+
+  @media (max-width: $screen-md) {
+    padding: 2.7vw 8vw 2.7vw 3vw;
+    width: 31.7vw;
+
+    font-size: 1.74vw;
+    line-height: 1.8vw;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 5vw 19vw 5vw 7vw;
+    width: 75.7vw;
+
+    font-size: 4.5vw;
+    line-height: 7.8vw;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0.4vw;
+
+    width: 2.1vw;
+    height: 2.1vw;
+
+    transform: translateY(-50%);
+
+    border-radius: 50%;
+    background-color: $green;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: $screen-md) {
+      right: 1vw;
+
+      width: 5.3vw;
+      height: 5.3vw;
+    }
+
+    @media (max-width: $screen-sm) {
+      right: 2vw;
+
+      width: 13.3vw;
+      height: 13.3vw;
+    }
+  }
+}
