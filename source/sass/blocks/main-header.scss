@@ -44,17 +44,13 @@
 }
 
 .main-header__logo {
-  min-width: 128px;
-
-  font-size: 18px;
+  font-size: 0.94vw;
   font-weight: 700;
   line-height: 1.4;
 
   color: $black;
 
   @media (max-width: $screen-md) {
-    min-width: 114px;
-
     font-size: 2vw;
   }
 
@@ -80,6 +76,7 @@
   @media (max-width: $screen-sm) {
     position: relative;
     z-index: 10;
+
     background-color: $green;
   }
 }
@@ -94,6 +91,7 @@
   @media (max-width: $screen-sm) {
     position: relative;
     z-index: 10;
+
     background-color: $green;
   }
 }

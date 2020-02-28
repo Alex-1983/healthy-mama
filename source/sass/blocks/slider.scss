@@ -8,8 +8,11 @@
   }
 
   @media (max-width: $screen-sm) {
+    overflow: hidden;
+
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 150vw;
     width: 91vw;
   }
 }
@@ -94,12 +97,6 @@
 
 .slider__item img {
   position: absolute;
-
-  @media (max-width: $screen-sm) {
-    position: static;
-
-    overflow: hidden;
-  }
 }
 
 .slider__photo-1-wrap img {
@@ -118,9 +115,10 @@
   }
 
   @media (max-width: $screen-sm) {
-    margin-top: 11.5vw;
-    margin-left: -53.5vw;
-    width: 200vw;
+    top: 17vw;
+    left: -55.6vw;
+
+    width: 204vw;
     height: auto;
   }
 }
@@ -141,8 +139,9 @@
   }
 
   @media (max-width: $screen-sm) {
-    margin-top: 10.3vw;
-    margin-left: 4.5vw;
+    top: 15.1vw;
+    left: 4.6vw;
+
     width: 81.3vw;
     height: auto;
   }
@@ -164,8 +163,9 @@
   }
 
   @media (max-width: $screen-sm) {
-    margin-top: 10vw;
-    margin-left: 9vw;
+    top: 15vw;
+    left: 9vw;
+
     width: 81vw;
     height: auto;
   }
@@ -183,6 +183,8 @@
 
 .slider__btn-item {
   position: absolute;
+
+  overflow: visible;
 
   padding-right: 0.8vw;
   width: 15.5vw;
@@ -241,8 +243,8 @@
     color: #2b2b2b;
 
     @media (max-width: $screen-md) {
-      font-size: 1.84vw;
-      line-height: 2vw;
+      font-size: 2.3vw;
+      line-height: 3vw;
     }
 
     &::after {
@@ -292,7 +294,7 @@
       top: 61.5vw;
       left: 3.3vw;
 
-      width: 33.3vw;
+      width: 34.1vw;
     }
   }
 }

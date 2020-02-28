@@ -1,0 +1,208 @@
+.recommendation {
+  position: relative;
+
+  padding-top: 3.85vw;
+
+  @media (max-width: $screen-md) {
+    padding: 0;
+    padding-bottom: 20vw;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 0;
+  }
+}
+
+.recommendation__inner {
+  position: relative;
+
+  display: flex;
+
+  padding-right: 10.3vw;
+  padding-left: 10.3vw;
+
+  background-color: $green;
+  background-image: url("../img/circle.svg"), url("../img/circle-right.svg");
+  background-repeat: no-repeat;
+  background-position: left 0.4vw top -11.6vw, right -0.4vw bottom -13.7vw;
+  background-size: 15.2vw auto, 15vw auto;
+
+  @media (max-width: $screen-md) {
+    flex-direction: column;
+
+    padding: 6.7vw 23.5vw 52.2vw;
+
+    background-image: url("../img/circle-right-md.svg");
+    background-position: right 0.6vw bottom -26.7vw;
+    background-size: 39vw auto;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 18.2vw 5.8vw 90.1vw;
+
+    background-image: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 35.521vw;
+    height: 19.688vw;
+
+    opacity: 0.1;
+    background-image: linear-gradient(64.37deg, #27ae60 8.32%, rgba(255, 255, 255, 0) 82.9%), url("../img/recommendation-pattern.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 35.521vw auto;
+
+    @media (max-width: $screen-md) {
+      display: none;
+    }
+  }
+}
+
+.recommendation__nutritionist-wrap {
+  position: relative;
+
+  @media (max-width: $screen-md) {
+    order: 2;
+  }
+}
+
+.recommendation__img-wrap {
+  margin-top: -10.5vw;
+
+  @media (max-width: $screen-md) {
+    position: absolute;
+    top: -3.5vw;
+    left: -7vw;
+
+    margin-top: 0;
+  }
+}
+
+.recommendation__img-wrap img {
+  width: 32.6vw;
+  height: 30vw;
+
+  @media (max-width: $screen-md) {
+    width: 70vw;
+    height: 65.2vw;
+  }
+
+  @media (max-width: $screen-sm) {
+    width: 102vw;
+    height: 97.5vw;
+  }
+}
+
+.recommendation__nutritionist-info {
+  position: absolute;
+  bottom: -2.1vw;
+  left: 7.5vw;
+  z-index: 0;
+
+  padding: 0.5vw 1vw;
+  width: 17.6vw;
+
+  line-height: 1.4;
+
+  text-align: center;
+
+  border: 1px dashed #27ae60;
+  border-radius: 65px;
+  background-color: $white;
+  box-shadow: 0 0 0 0.26vw $white, 0 1.094vw 6.927vw rgba(17, 95, 0, 0.21);
+
+  @media (max-width: $screen-md) {
+    bottom: -3.9vw;
+    left: 16vw;
+
+    padding: 0.9vw 2vw;
+    width: 37.7vw;
+
+    box-shadow: 0 0 0 0.69vw $white, 0 1.094vw 6.927vw rgba(17, 95, 0, 0.21);
+  }
+
+  @media (max-width: $screen-sm) {
+    bottom: -19.9vw;
+    left: 10vw;
+
+    padding: 3.6vw 1vw;
+    width: 81.7vw;
+  }
+}
+
+.recommendation__nutritionist-name {
+  display: block;
+
+  margin: 0;
+  margin-bottom: 0.2vw;
+  padding: 0;
+
+  font-size: 0.83vw;
+  font-weight: 700;
+
+  @media (max-width: $screen-md) {
+    font-size: 1.97vw;
+  }
+
+  @media (max-width: $screen-sm) {
+    font-size: 4.4vw;
+  }
+}
+
+.recommendation__nutritionist-position {
+  font-size: 0.73vw;
+
+  color: #6c997f;
+
+  @media (max-width: $screen-md) {
+    font-size: 1.73vw;
+  }
+
+  @media (max-width: $screen-sm) {
+    font-size: 4.4vw;
+  }
+}
+
+.recommendation__text-wrap {
+  z-index: 2;
+
+  margin-left: -0.5vw;
+
+  color: $white;
+
+  @media (max-width: $screen-sm) {
+    margin: 0;
+    margin-bottom: 5vw;
+  }
+}
+
+.recommendation__text-wrap h2 {
+  margin: 0;
+  margin-top: 3.65vw;
+  margin-bottom: 2.9vw;
+  padding: 0;
+
+  font-size: 2.13vw;
+  font-weight: 700;
+  line-height: 1.18;
+
+  @media (max-width: $screen-md) {
+    margin: 0;
+    margin-bottom: 5vw;
+
+    font-size: 41px;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 12vw;
+    margin-left: 5vw;
+
+    font-size: 6.9vw;
+  }
+}
