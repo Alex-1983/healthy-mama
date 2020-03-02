@@ -292,7 +292,7 @@
 
     @media (max-width: $screen-md) {
       top: 61.5vw;
-      left: 3.3vw;
+      left: 2.3vw;
 
       width: 34.1vw;
     }
@@ -330,48 +330,9 @@
   display: none;
 
   @media (max-width: $screen-sm) {
-    position: absolute;
     top: 102vw;
     left: 0;
 
     display: block;
-
-    margin: 0;
-    padding: 0;
-    width: 10vw;
-    height: 10vw;
-
-    font-size: 0;
-
-    color: transparent;
-    border-radius: 50%;
-    background-color: $green;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 4vw;
-      left: 4vw;
-
-      width: 2.5vw;
-      height: 2.5vw;
-
-      transform: rotate(45deg);
-
-      border: 2px solid rgb(255, 255, 255);
-      border-top: rgba(179, 179, 179, 0);
-      border-right: rgba(179, 179, 179, 0);
-    }
-
-    &--next {
-      left: 81vw;
-
-      transform: rotate(180deg);
-
-      &::before {
-        top: 3.5vw;
-        left: 4.3vw;
-      }
-    }
   }
 }
