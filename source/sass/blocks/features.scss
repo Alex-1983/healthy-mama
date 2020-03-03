@@ -1,0 +1,260 @@
+.features {
+  padding-top: 13.7vw;
+  padding-bottom: 16vw;
+
+  background-image: url("../img/tree.png"), url("../img/girls.png"), url("../img/bg-features.jpg");
+  background-repeat: no-repeat;
+  background-position: left 0 top 18.48vw, left 4.5vw top 9vw, left top;
+  background-size: 27.9vw auto, 67vw auto, 100vw auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/tree@2x.png"), url("../img/girls@2x.png"), url("../img/bg-features@2x.jpg");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/tree.webp"), url("../img/girls.webp"), url("../img/bg-features.webp");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/tree@2x.webp"), url("../img/girls@2x.webp"), url("../img/bg-features@2x.webp");
+  }
+
+  @media (max-width: $screen-md) {
+    padding-top: 120.6vw;
+
+    background-image: url("../img/girls.png"), url("../img/bg-features-md.jpg");
+    background-position: left -16vw top 17vw, left top 18.1vw;
+    background-size: 145.1vw auto, 100vw auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/girls@2x.png"), url("../img/bg-features-md@2x.jpg");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/girls.webp"), url("../img/bg-features-md.webp");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/girls@2x.webp"), url("../img/bg-features-md@2x.webp");
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-top: 156.6vw;
+
+    background-position: left -44vw top 23vw, left top 18.1vw;
+    background-size: 200vw auto, 100vw auto;
+  }
+}
+
+.features__inner {
+  margin-right: 17vw;
+  margin-left: 52.6vw;
+
+  @media (max-width: $screen-md) {
+    margin-right: 13vw;
+    margin-left: 14vw;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-right: 4vw;
+    margin-left: 4vw;
+  }
+}
+
+.features__inner h2 {
+  margin: 0;
+  margin-bottom: 4.5vw;
+  padding: 0;
+
+  font-size: 2.14vw;
+  line-height: 1.18;
+
+  color: $green;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 11.5vw;
+
+    font-size: 5.32vw;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 12.2vw;
+
+    font-size: 6.88vw;
+  }
+}
+
+.features__list-item {
+  position: relative;
+
+  margin-bottom: 1.99vw;
+  padding-left: 4.2vw;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 5.2vw;
+    padding-left: 10.4vw;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 9vw;
+    padding-left: 15vw;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 2.99vw;
+    height: 2.99vw;
+
+    border-radius: 50%;
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.55vw;
+    box-shadow: 0 0.208vw 1.823vw rgba(25, 130, 189, 0.18);
+
+    @media (max-width: $screen-md) {
+      width: 7.5vw;
+      height: 7.5vw;
+
+      background-size: 3.8vw;
+    }
+
+    @media (max-width: $screen-sm) {
+      width: 11vw;
+      height: 11vw;
+
+      background-size: 5.6vw;
+    }
+  }
+
+  &--ecology {
+    &::before {
+      background-image: url("../img/sheet.svg");
+    }
+  }
+
+  &--balance {
+    padding-right: 5.5vw;
+
+    @media (max-width: $screen-md) {
+      padding-right: 10.4vw;
+    }
+
+    @media (max-width: $screen-sm) {
+      padding-right: 7.4vw;
+    }
+
+    &::before {
+      top: 0.3vw;
+
+      background-image: url("../img/checked.svg");
+
+      @media (max-width: $screen-md) {
+        top: 0.6vw;
+      }
+
+      @media (max-width: $screen-sm) {
+        top: -1vw;
+      }
+    }
+  }
+
+  &--individuality {
+    margin-bottom: 2.8vw;
+    padding-right: 3.3vw;
+
+    @media (max-width: $screen-md) {
+      margin-bottom: 7.4vw;
+      padding-right: 4.8vw;
+    }
+
+    &::before {
+      top: 0.3vw;
+
+      background-image: url("../img/curved-arrow.svg");
+
+      @media (max-width: $screen-md) {
+        top: 0.6vw;
+      }
+
+      @media (max-width: $screen-sm) {
+        top: -1vw;
+      }
+    }
+  }
+
+  &--benefit {
+    &::before {
+      background-image: url("../img/health-care.svg");
+      background-position: center 0.75vw;
+      background-size: 1.9vw;
+
+      @media (max-width: $screen-md) {
+        background-position: center 1.4vw;
+        background-size: 4.9vw;
+      }
+
+      @media (max-width: $screen-sm) {
+        background-position: center 2.99vw;
+        background-size: 6.9vw;
+      }
+    }
+  }
+}
+
+.features__list-item h3 {
+  margin: 0;
+  margin-bottom: 0.64vw;
+  padding: 0;
+
+  font-size: 0.99vw;
+  line-height: 1.18;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 1.35vw;
+
+    font-size: 2.64vw;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 1.35vw;
+
+    font-size: 5vw;
+  }
+}
+
+.features__list-item p {
+  margin: 0;
+  padding: 0;
+
+  font-size: 0.802vw;
+  line-height: 1.18;
+
+  @media (max-width: $screen-md) {
+    font-size: 2.35vw;
+  }
+
+  @media (max-width: $screen-sm) {
+    font-size: 4.4vw;
+    line-height: 1.21;
+  }
+}
+
+.features__list-item--benefit p {
+  font-size: 0.716vw;
+
+  @media (max-width: $screen-md) {
+    font-size: 2.09vw;
+    line-height: 1.19;
+  }
+
+  @media (max-width: $screen-sm) {
+    font-size: 4.4vw;
+    line-height: 1.4;
+  }
+}

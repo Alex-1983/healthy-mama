@@ -1,6 +1,8 @@
 .advertisement {
   padding-bottom: 17.4vw;
 
+  overflow: hidden;
+
   @media (max-width: $screen-md) {
     padding-bottom: 95.4vw;
   }
