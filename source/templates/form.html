@@ -1,0 +1,17 @@
+<section class="form">
+  <h2>Хотите получить персональное меню?</h2>
+  <p>Оставьте заявку и наш оператор свяжется с Вами для уточнения деталей</p>
+  <form class="form__order" action="#" method="POST">
+    <p class="form__order-item form__order-item--name">
+      <label>
+        <input id="name" type="text" name="name" placeholder="Ваше имя" pattern="^([A-Za-zА-Яа-яЁё]+\s?'?-?)+$" autocomplete="on" required>
+      </label>
+    </p>
+    <p class="form__order-item form__order-item--phone">
+      <label>
+        <input id="phone" type="tel" name="phone" placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s\d{3}[-]\d{2}[-]\d{2}" autocomplete="on" required>
+      </label>
+    </p>
+    <button class="btn button-order form__order-btn" type="submit">Оформить заказ</button>
+  </form>
+</section>

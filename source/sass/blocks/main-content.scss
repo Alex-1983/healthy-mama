@@ -1,0 +1,82 @@
+.main-content__wrap-instagram-form {
+  position: relative;
+
+  padding-top: 0.8vw;
+  padding-bottom: 8vw;
+
+  @media (max-width: $screen-md) {
+    padding-top: 7.3vw;
+    padding-bottom: 40.3vw;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-bottom: 23.5vw;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+
+    background-image: linear-gradient(to top, #ffffff 0%, rgba(246, 249, 255, 0) 17.59%), url("../img/pattern-instagram-left.png");
+    background-position: top 8.7vw left;
+    background-size: 51vw auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(to top, #ffffff 0%, rgba(246, 249, 255, 0) 17.59%), url("../img/pattern-instagram-left@2x.png");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(to top, #ffffff 0%, rgba(246, 249, 255, 0) 17.59%), url("../img/pattern-instagram-left.webp");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(to top, #ffffff 0%, rgba(246, 249, 255, 0) 17.59%), url("../img/pattern-instagram-left@2x.webp");
+    }
+
+    @media (max-width: $screen-md) {
+      content: none;
+    }
+  }
+
+  &::after {
+    right: 0;
+    bottom: 0;
+
+    background-image: url("../img/pattern-instagram-right.png");
+    background-position: bottom 7vw right -3.7vw;
+    background-size: 50vw auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/pattern-instagram-right@2x.png");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/pattern-instagram-right.webp");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/pattern-instagram-right@2x.webp");
+    }
+
+    @media (max-width: $screen-md) {
+      background-position: bottom 11.4vw right -3vw;
+      background-size: 118.6vw auto;
+    }
+
+    @media (max-width: $screen-sm) {
+      content: none;
+    }
+  }
+}
