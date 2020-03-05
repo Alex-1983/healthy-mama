@@ -7,84 +7,18 @@
 }
 
 .main-nav__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  margin-left: 5.6vw;
 
   @media (max-width: $screen-md) {
-    width: 52.9vw;
-  }
+    justify-content: flex-end;
 
-  @media (max-width: $screen-sm) {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
-    margin-top: 15vw;
-    width: 100%;
-  }
-}
-
-.main-nav__item {
-  margin-bottom: 1.3vw;
-  margin-left: 5.7vw;
-
-  @media (max-width: $screen-md) {
-    margin-bottom: 1.8vw;
-    margin-left: 5.8vw;
+    margin-left: 9.2vw;
+    padding-right: 8.8vw;
   }
 
   @media (max-width: $screen-sm) {
     margin: 0;
-    margin-bottom: 23.438vw;
-  }
-
-  &--2 {
-    @media (max-width: $screen-md) {
-      margin-right: 0.7vw;
-    }
-  }
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.main-nav__link {
-  font-size: 0.73vw;
-  font-weight: 600;
-  line-height: 1vw;
-
-  color: $black;
-
-  @media (max-width: $screen-md) {
-    font-size: 1.82vw;
-    line-height: 3vw;
-  }
-
-  @media (max-width: $screen-sm) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-
-    font-size: 4.375vw;
-    line-height: 6.125vw;
-
-    text-align: center;
-
-    color: $white;
-
-    &:hover {
-      border-bottom: 1px solid $white;
-    }
-  }
-
-  &--current {
-    color: $green;
-
-    @media (max-width: $screen-sm) {
-      color: $white;
-    }
+    margin-top: 15vw;
   }
 }
 

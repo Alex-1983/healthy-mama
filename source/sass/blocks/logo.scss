@@ -1,0 +1,18 @@
+.logo {
+  font-size: 0.94vw;
+  font-weight: 700;
+  line-height: 1.4;
+
+  color: $black;
+
+  @media (max-width: $screen-md) {
+    font-size: 2vw;
+  }
+
+  @media (max-width: $screen-sm) {
+    font-size: 5vw;
+    line-height: 6vw;
+
+    color: $white;
+  }
+}
