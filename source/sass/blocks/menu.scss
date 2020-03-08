@@ -18,6 +18,9 @@
 .menu__item {
   margin-bottom: 1.3vw;
   margin-right: 5.7vw;
+  cursor: pointer;
+
+  z-index: 10;
 
   @media (max-width: $screen-md) {
     margin-bottom: 1.8vw;

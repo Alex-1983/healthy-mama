@@ -68,6 +68,8 @@
 }
 
 .main-footer__menu-link {
+  text-align: left;
+
   @media (max-width: $screen-sm) {
     padding-bottom: 2vw;
   }
@@ -110,5 +112,7 @@
 
   @media (max-width: $screen-sm) {
     font-size: 3.7vw;
+
+    opacity: 0.45;
   }
 }

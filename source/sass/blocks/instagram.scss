@@ -6,7 +6,7 @@
 
 .instagram h2 {
   margin: 0 0 0.8vw;
-  padding: 0;
+  padding: 0 15vw;
 
   font-size: 2.14vw;
   line-height: 1.18;
@@ -15,6 +15,8 @@
 
   @media (max-width: $screen-md) {
     margin-bottom: 1.7vw;
+    padding-left: 10.5vw;
+    padding-right: 10.5vw;
 
     font-size: 5.4vw;
     line-height: 1.18;
@@ -29,13 +31,15 @@
 
 .instagram p {
   margin: 0;
-  padding: 0;
+  padding: 0 15vw;
 
   font-size: 0.83vw;
   line-height: 1.18;
 
   @media (max-width: $screen-md) {
     margin-bottom: 6.5vw;
+    padding-left: 10.5vw;
+    padding-right: 10.5vw;
 
     font-size: 2.087vw;
   }

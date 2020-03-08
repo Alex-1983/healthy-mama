@@ -3,12 +3,56 @@
 
   overflow: hidden;
 
+  background-image: url("../img/bg-advertisement.png");
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-advertisement@2x.png");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-advertisement.webp");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-advertisement@2x.webp");
+  }
+
   @media (max-width: $screen-md) {
     padding-bottom: 95.4vw;
+
+    background-image: url("../img/bg-advertisement-md.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-advertisement-md@2x.png");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-advertisement-md.webp");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-advertisement-md@2x.webp");
+    }
   }
 
   @media (max-width: $screen-sm) {
     padding-bottom: 0;
+
+    background-image: url("../img/bg-advertisement-sm.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-advertisement-sm@2x.png");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-advertisement-sm.webp");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-advertisement-sm@2x.webp");
+    }
   }
 }
 
