@@ -1,7 +1,7 @@
 'use strict';
 
 (function() {
-  var sections = document.querySelectorAll('[data-block]');
+  var sections = document.querySelectorAll("[data-block]");
 
   if (!sections) {
     return;
